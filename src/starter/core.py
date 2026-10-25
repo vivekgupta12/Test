@@ -1,0 +1,5 @@
+def greet(name: str = "World") -> str:
+    name = name.strip()
+    if not name:
+        raise ValueError("name must not be empty")
+    return f"Hello, {name}!"
